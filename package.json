@@ -1,0 +1,26 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./main.js",
+  "dependencies": {
+    "@datadog/browser-logs": "^4.4.0",
+    "electron": "^17.0.1"
+  },
+  "devDependencies": {
+    "electron-reloader": "^1.2.3"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomas-Chiu/electron.git"
+  },
+  "author": "Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thomas-Chiu/electron/issues"
+  },
+  "homepage": "https://github.com/Thomas-Chiu/electron#readme"
+}
