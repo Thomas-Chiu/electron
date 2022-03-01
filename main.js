@@ -1,5 +1,4 @@
 const { app, BrowserWindow } = require("electron");
-const { datadogLogs } = require("@datadog/browser-logs");
 const path = require("path");
 
 const createWindow = () => {
@@ -28,21 +27,3 @@ app.on("quit", () => {
 try {
   require("electron-reloader")(module);
 } catch {}
-
-/**
- * datadog log
- */
-
-datadogLogs.init({
-  clientToken: "pubcd5f640151316f9c0c9c9da8da090479",
-  site: "datadoghq.com",
-  // forwardErrorsToLogs: true,
-  sampleRate: 100,
-});
-
-console.log(datadogLogs);
-
-datadogLogs.logger.info("Button clicked", {
-  name: "buttonName",
-  id: 123,
-});
